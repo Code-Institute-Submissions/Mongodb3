@@ -1,108 +1,119 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+# Cookbook
+## [Demo Here](https://cookbook-recipe.herokuapp.com/)
+ In this application I use technologies learnt on my coding journey to demonstrate how a document-based database can be utilise efficiently and effectively. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+---
+## UX
+I wanted to create a seamless app for people to be able to easily store recipes.
+The app is designed to allow for users to create, store and manage recipes. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+---
+## Wireframes 
+[Desktop View](https://github.com/waltercarreno/Mongodb3/tree/master/static/images)
 
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
 ---
 
-Happy coding!
+---
+
+
+---
+## Technology Used
+- [Python 3](https://www.python.org/download/releases/3.0/)
+- [Flask 1.0.2](http://flask.pocoo.org/)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CCS3/SCSS](https://sass-lang.com/)
+- [Materialize](https://materializecss.com/)
+- [JavaScript](https://www.javascript.com/)
+- [jQuery](https://jquery.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Fontawesome](https://fontawesome.com/)
+
+---
+
+---
+
+##### Why I built 'CookBook
+
+The main reasoning behind the project was inspired by Code Institute as the brief was to create a cookbook type project. 
+---
+## Testing
+Most of the applications testing was done throughout development, most of which was manual tests. I will outline most of what I did below for documentation purposes.
+
+
+
+---
+
+**Testing Flask Views** - In Flask each app's route uses a view template from my app structure these views were tested throughout every stage within my development process. Where needed I would test each view worked as expected when added new code or functionality to my app.
+
+
+---
+
+**Testing the database** - Getting my data collections right was the trickiest part of this project. As through developing my application my database schema was constantly changing to the requirements of my app. Where multiple changes had to be made to the database in order for all my app's functionality to work properly.
+
+To achieve this I imported my data into my database via .JSON file and ensure all routes worked as expected.
+
+---
+
+**Testing CRUD**
+
+**READ**
+Firstly, before anything I wanted to make sure that I could display to my users the recipes I'd already collected and inserted into my db. To do this I had to create a home route and load the recipe collection within this route then pass the data to the view. As previously mentioned for the views I would constantly throughout the project development ensure there was no errors from Flask/Jinja before progressing with functionality of my app. 
+
+
+**UPDATE**
+
+Testing the update recipes route was a case of trying the update.all method and applying this to a route that allowed the user to update the record based on some input by the user posting by the update recipe form. Upon a successful edit I would check in the single recipe view and by printing the entire recipe to the terminal that all user edited fields have updated.
+
+**DELETE**
+Testing the delete function in my app was a case of creating the route and then testing that route within the browser, I would grab a recipe ID and then enter the URL needed for that route to perform. After deleting a record, I would flash a message for the user to be notified and also print a message to the terminal. To ensure the recipe was delete I would check in my view all recipes page along with checking the Atlas website. 
+
+**CREATE**
+To test my create functionality of my app I would continuously fill out a recipe form and test that the route when posting create a new recipe within my recipe collection and that all the fields I needed were created successfully.
+
+Once my CRUD functionality was in place, I tested each form multiple times and tried to break each field or manipulate each form to perform unexpected. I have had my apps functionality tested multiple times by friends, family. Where bugs were identified I made a note and fixed each issue.
+
+
+
+### HTML & CSS
+All my HTML and CSS is valid, checked with the following validators
+
+- [HTML Validator](https://validator.w3.org/)
+-  [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+## Deployment 
+Getting my application ready for deployment consisted of the following: - 
+1. Removing all my hard-coded environment variables to project my keys and secrets. These were placed in the heroku Config Vars for production.
+2. Ensuring the applications requirements.txt is up-to-date with all the latest packages installed for my app being noted on this file. 
+	**The command to update requirements**
+		```
+		pip3 freeze > requirements.txt
+		```
+3. Set up the Procfile - *A Procfile is required by Heroku in order to tell the service worker what command to run for my application to start.*
+4. Set Flask's debugging to False.
+5. Push all my latest production ready code to GitHub ready for deployment via Heroku's GitHub function where you can deploy from GitHub the production ready app.
+
+
+**Upon successful deployment Heroku will give you the URL that is hosted your app**
+
+*Upon unsuccessful deployment Heroku will log the cause of the error and this is view able in the 'view log' section on the Heroku website. Here you will find a detailed report of what has cause your application not to be deployed successfully. *
+
+
+**Via GitHub** -  
+1. You can manually download locally to your machine and then upload to your preferred IDE. 
+2. Install the projects requirements.txt using `pip3 install -r requirements.txt`
+3. You will need to update a few environment variables before we can run the app.
+	1. `app.config["MONGO_DBNAME"] = "cookbook_creation"`
+	2. `app.config["MONGO_URI"] = os.getenv("MONGO_URI", "monogodb://localhost")`
+	3. `app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")`
+4. Once the above steps are complete you can try run the application using `python3 main.py`
+
+
+## Reference
+
+
+- Youtuber **Pretty printed**
+- Youtuber **Free Bootcamp**
+
+
