@@ -1,6 +1,6 @@
 
 # Cookbook
-## [Demo Here](https://cookbook-recipe.herokuapp.com/)
+## [Demo Here](https://milestonproject3.herokuapp.com/)
  In this application I use technologies learnt on my coding journey to demonstrate how a document-based database can be utilise efficiently and effectively. 
 
 ## UX
