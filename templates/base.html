@@ -22,7 +22,6 @@
           </ul>
           {% else %}
           <ul class="right hide-on-med-and-down manage-margin">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('profile', username=session['username']) }}">Profile</a></li>
             <li><a href="{{ url_for('addrecipe') }}">New Task</a></li>
             <li><a href="{{ url_for('allrecipes') }}">All recipies</a></li>
@@ -41,7 +40,6 @@
       </ul>
       {% else %}
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('profile', username=session['username']) }}">Profile</a></li>
         <li><a href="{{ url_for('addrecipe') }}">New Task</a></li>
         <li><a href="{{ url_for('allrecipes') }}">All recipies</a></li>
