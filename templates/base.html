@@ -41,7 +41,7 @@
       {% else %}
       <ul class="sidenav" id="mobile-demo">
         <li><a href="{{ url_for('profile', username=session['username']) }}">Profile</a></li>
-        <li><a href="{{ url_for('addrecipe') }}">New Task</a></li>
+        <li><a href="{{ url_for('addrecipe') }}">Add recipe</a></li>
         <li><a href="{{ url_for('allrecipes') }}">All recipies</a></li>
         <li><a href="{{url_for('logout')}}">Log Out</a></li>
       </ul>

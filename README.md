@@ -3,14 +3,55 @@
 ## [Demo Here](https://milestonproject3.herokuapp.com/)
  In this application I use technologies learnt on my coding journey to demonstrate how a document-based database can be utilise efficiently and effectively. 
 
-## UX
+  ## **1. Purpose of the project**
+  I wanted to show what I have learned about flasks and python.
+
+## **2. User stories**
+
+### UX
 I wanted to create a seamless app for people to be able to easily store recipes.
 The app is designed to allow for users to create, store and manage recipes. 
+As a user I will like to upload recipes and be able to see other recipes.
+As a programmer I want to me able to manage my website.
 
-## Wireframes 
+## **3. Features**
+
+I Have a navbar and and a footer that are present in all the pages.
+The body changes depending of websites.
+Login: have a login form that allow user to get into the website.
+Register: have a registration form that allow user to be register at the website.
+Profile: User can see all the recipes that he has created.
+Allrecipes: Users can see all the recipes that are upload to the website. Allrecipes appear in card forms.
+Editrecipe: Users can edit the recipes that they have created.
+Editrecipe: Users can edit the recipes that they have created.
+
+## ** 4. Future features**
+Add a commet funcionality and enable users to give feedback to recipes.
+
+## **5. Typography and color scheme**
+### Fonts.
+Fonts families:
+
+ [Georgia](https://fonts.google.com/noto/specimen/Noto+Serif+Georgian?query=georgia) font.
+ [TimesNewRoman](https://fonts.google.com/) font.
+ [Serif](https://fonts.google.com/specimen/PT+Serif?query=serif) font.
+ [Courier-new](https://docs.microsoft.com/en-us/typography/font-list/courier-new) font.
+ [Indie-Flower](https://fonts.google.com/specimen/Indie+Flower) font.
+ 
+### Colors.
+
+body has a background color [#FFA07A](https://www.color-name.com/light-salmon.color) .
+footer has a background color [#808080](https://www.canva.com/colors/color-meanings/gray/) .
+button have [#00FF00](https://www.canva.com/colors/color-meanings/green/) and 
+[#ff0000](https://www.canva.com/colors/color-meanings/red/).
+Cards has a background color [#add8e6](https://www.canva.com/colors/color-meanings/light-blue/) and 
+borders [#a52900](https://www.color-hex.com/color/a52900).
+
+
+## 6. Wireframes 
 [Desktop View](https://github.com/waltercarreno/Mongodb3/tree/master/static/images)
 
-## Technology Used
+## 7. Technology Used
 - [Python 3](https://www.python.org/download/releases/3.0/)
 - [Flask 1.0.2](http://flask.pocoo.org/)
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -23,30 +64,25 @@ The app is designed to allow for users to create, store and manage recipes.
 
 
 
-##### Why I built 'CookBook
+## **8. Testing**
 
-The main reasoning behind the project was inspired by Code Institute as the brief was to create a cookbook type project. 
----
+I have test Flask and jinja to avoid problems rendering in the website.
+I have test database and check that work properly with data introduced by users.
 
-
-**Testing Flask Views** - In Flask each app's route uses a view template from my app structure these views were tested throughout every stage within my development process. Where needed I would test each view worked as expected when added new code or functionality to my app.
-
-**Testing the database** - Getting my data collections right was the trickiest part of this project. As through developing my application my database schema was constantly changing to the requirements of my app. Where multiple changes had to be made to the database in order for all my app's functionality to work properly.
-
-**Testing CRUD**
-
-
+8.1 fixed bugs
 
 **EDITE**
-
-Testing the edite recipes route was a case of trying the update.All method and applying this to a route that allowed the user to update the record based on some input by the user posting by the update recipe form. It can be access through profile.
+Users were able to edit recipes even if they were not the creators. Users were able to edit recipes that didn't exist. Users could edit
+without begin loged. Fixed by adding validation in sessions and added exception.
 
 **DELETE**
-Delete functions requires that the user implement the username previous delete. It can be access through profile.
+Users were able to create recipes even if they were not the creators. Users were able to create recipes that didn't exist. Users could deleted
+without begin loged.
 
 **CREATE**
-I used flaskwtf forms to allow users to created forms and allow them to upload their recipies.
+Users could create without begin loged. Fixed by adding validation in sessions and added exception.
 
+8.2 code validator
 
 ### HTML & CSS
 All my HTML and CSS is valid, checked with the following validators
@@ -54,7 +90,7 @@ All my HTML and CSS is valid, checked with the following validators
 - [HTML Validator](https://validator.w3.org/)
 -  [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-## Deployment 
+## 9 Deployment 
 Getting my application ready for deployment consisted of the following: - 
 1. Removing all my hard-coded environment variables to project my keys and secrets. These were placed in the heroku Config Vars for production.
 2. Ensuring the applications requirements.txt is up-to-date with all the latest packages installed for my app being noted on this file. 
@@ -83,10 +119,13 @@ Getting my application ready for deployment consisted of the following: -
 4. Once the above steps are complete you can try run the application using `python3 main.py`
 
 
-## Reference
+## 10. Credits.
 
+ I would like to thank each and every one who has helped or contributed to my project in any way. Please see list of names below:
 
+- Mentor   **Rohit Sharma**
 - Youtuber **Pretty printed**
 - Youtuber **Free Bootcamp**
-
+- Youtuber **Fazz**
+- Youtuber **Victor Robles**
 

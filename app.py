@@ -159,7 +159,7 @@ def addrecipe():
         })
         flash('Recipe added.', 'primary')
         return render_template("profile.html")
-    return render_template('newtask.html', form=recipe_form)
+    return render_template('addrecipe.html', form=recipe_form)
 
 
 @app.route('/recipe_view/<recipe_id>')
