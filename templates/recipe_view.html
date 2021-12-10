@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-
+{% if 'username' in session %}
 <section>
     <br>
     <br>
     <div class="row">
-        <!--beginning of col 7-->
         <div class="col m7 reciperslt">
             <h3>{{ recipe.recipe_name }}</h3>
             <div>
@@ -13,11 +12,13 @@
             </div>
             <hr class="hr">
             <div class="row section recipe-icons">
-                <div class="col-sm-4">
+                <div class="col s2">
+                </div>
+                <div class="col s4">
                     <span class="fas fa-clock fa-2x"></span>
                     <p class="clear">{{ recipe.cooking_time }} Min</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col s4">
                     <span class="fas fa-fire fa-2x"></span>
                     <p class="clear">{{ recipe.calories }} Calories</p>
                 </div>
@@ -38,5 +39,14 @@
         </div>
     </div>
 </section>
+{% else %}
+<div class="container">
+    <p class="alert-danger">You are not logged in to view this page. Please Login.</p>
+    <div class="section-home">
+        <a href="{{ url_for('login') }}" class="btn btn-primary">Login</a>
+    </div>
+</div>
+
+{% endif %}
 
 {% endblock %}

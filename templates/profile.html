@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-
+{% if 'username' in session %}
     <div class="row public-cards-row">
         <div class="col s12 m8 offset-m2">
                 <h3 class="center-align light-blue-text text-darken-4">
@@ -51,5 +51,15 @@
             </div>
         </div>
     </section>
+
+{% else %}
+<div class="container">
+    <p class="alert-danger">You are not logged in to view this page. Please Login.</p>
+    <div class="section-home">
+        <a href="{{ url_for('login') }}" class="btn btn-primary">Login</a>
+    </div>
+</div>
+
+{% endif %}
 
 {% endblock %} 

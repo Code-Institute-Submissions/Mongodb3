@@ -10,7 +10,8 @@ body {
   }
 footer{
     margin-top: auto;
-    background: #494848;
+    background: hsl(0, 1%, 28%);
+    min-height: 30vh;
 }
 
 a {
@@ -38,7 +39,7 @@ a {
 .alert-danger {
   color: #ab0c1c;
   background-color: transparent;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
 }
 
 .alert-primary {
@@ -79,7 +80,8 @@ a {
       }
       
 .pagination li.active {
-        background-color: #2e62af;
+        background-color: #ab0c1c;
+        margin-top: auto;
       }
 
 .recipeimage {
@@ -116,12 +118,15 @@ a {
 }
 
 
-/* media view-port */
+/* media */
+.footer-text {
+  font-size: erase;
+}
 
  @media screen and (max-width: 780px) {
         .reciperesultimg {
-            width: 350px;
-            height: 350px;
+            width: 40vh;
+            height: 40vh;
             align-items: center;
             border-style: solid;
             border-color: #a52900;
