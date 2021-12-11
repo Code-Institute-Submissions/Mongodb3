@@ -18,8 +18,8 @@ As a programmer I want to me able to manage my website.
 
 I Have a navbar and and a footer that are present in all the pages.
 The body changes depending of websites.
-Login: have a login form that allow user to get into the website.
-Register: have a registration form that allow user to be register at the website.
+Login: have a login form that allow user to get into the website. Login has a username and a password.
+Register: have a registration form that allow user to be register at the website. Register has a username and a password.
 Profile: User can see all the recipes that he has created.
 Allrecipes: Users can see all the recipes that are upload to the website. Allrecipes appear in card forms.
 Editrecipe: Users can edit the recipes that they have created.

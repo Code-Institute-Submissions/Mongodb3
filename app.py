@@ -148,14 +148,15 @@ def addrecipe():
     recipe_form = RecipeForm()
 
     if request.method == 'POST':
-        mongo.db.recipes.insert_one({
-            'username': session['username'],
-            'recipe_name': recipe_form.recipe_name.data,
-            'description': recipe_form.description.data,
-            'ingredients': recipe_form.ingredients.data,
-            'cooking_time': recipe_form.cooking_time.data,
-            'calories': recipe_form.calories.data,
-            'recipe_image': recipe_form.recipe_image.data,
+        if session['username'] == request.form.get('username'):
+            mongo.db.recipes.insert_one({
+                'username': session['username'],
+                'recipe_name': recipe_form.recipe_name.data,
+                'description': recipe_form.description.data,
+                'ingredients': recipe_form.ingredients.data,
+                'cooking_time': recipe_form.cooking_time.data,
+                'calories': recipe_form.calories.data,
+                'recipe_image': recipe_form.recipe_image.data,
         })
         flash('Recipe added.', 'primary')
         return render_template("profile.html")
@@ -231,7 +232,7 @@ def delete_recipe(recipe_id):
             return render_template("profile.html")
         else:
             flash('Error ocurred.', 'danger')
-            return render_template("profile.html")
+            return render_template("404.html")
 
     return render_template('delete_recipe.html', form=recipe_delete,
                            recipe=recipe)

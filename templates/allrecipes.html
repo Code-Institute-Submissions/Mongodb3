@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-{% if 'username' in session %}
     <div class="row allrecipes">
             {% for recipe in recipes %}
                 <div class="col col s12 m6">
@@ -26,10 +25,4 @@
              
              </div>
 {{ pagination.links }}
-{% else %}
-        <div class="container">
-            <p class="alert-danger">You are not logged in to view this page. Please Login.</p>
-        </div>
-        
-{% endif %}
  {% endblock %} 
